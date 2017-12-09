@@ -19,5 +19,7 @@ use Illuminate\Http\Request;
 $api = app('Dingo\Api\Routing\Router');
 
 $api->version('v1', function ($api) {
-
+    $api->get('hello', function() {
+        return "hello qgz!";
+    });
 });
